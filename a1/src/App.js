@@ -1,12 +1,17 @@
-import React from 'react';
-import LandingPage from './components/LandingPage';
-
-function App() {
+import Labs from "./Labs";
+import Kanbas from "./Kanbas";
+import LandingPage from "./components/LandingPage";
+import { HashRouter, Route, Routes } from "react-router-dom";
+export default function App() {
     return (
-        <div>
-            <LandingPage />
-        </div>
+        <HashRouter>
+            <div>
+                <Routes>
+                    <Route path="/" element={ <LandingPage />} />
+                    <Route path="/Labs/*" element={<Labs />} />
+                    <Route path="/Kanbas/*" element={<Kanbas />} />
+                </Routes>
+            </div>
+        </HashRouter>
     );
 }
-
-export default App;
