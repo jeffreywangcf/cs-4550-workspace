@@ -8,7 +8,7 @@ import AssignmentEditor from "./Assignments/Editor";
 export default function Courses() {
     return (
         <div id="wd-courses" className="p-6">
-            <h2 className="text-3xl font-bold mb-4">Mug 302: Musics from the Muggle World</h2>
+            <h2 className="text-3xl font-bold mb-4">MUG 302: Musics from the Muggle World</h2>
             <hr />
             <table className="w-full mt-4">
                 <tr>

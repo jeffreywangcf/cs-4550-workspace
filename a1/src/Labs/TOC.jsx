@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaGithub } from 'react-icons/fa'; // Import the GitHub icon
+import { FaGithub } from 'react-icons/fa';
 
 export default function TOC() {
     return (

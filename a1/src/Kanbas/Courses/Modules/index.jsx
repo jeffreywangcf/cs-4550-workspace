@@ -13,7 +13,7 @@ export default function Modules() {
                 </div>
             </div>
 
-            <p className="text-info-content mb-6">This introductory course provides an exploration of music from the Muggle world, with a focus on a renowned country-pop artist whose work has transcended genres and generations. Students will examine how the artist's lyrics reflect themes of love, resilience, and self-discovery, resonating with both Muggles and wizards alike. The course will delve into how these themes connect with key moments in wizarding history and magical folklore. This course satisfies the diversity requirement.</p>
+            <p className="text-info-content mb-6">This introductory course explores Muggle music, focusing on an artist who is a mastermind, casting spells with lyrical brilliance across genres. Known for sparking revolutions in both country and pop, this artist’s work has enchanted listeners across generations. Students will shake off preconceived notions of Muggle music, diving into themes of love and fearless resilience. Throughout the semester, students will analyze how key songs align with magical folklore, the long-lived legacy of wizarding history, and the evermore evolving relationship between magical and non-magical societies. This course satisfies the diversity requirement.</p>
 
 
             <ul id="wd-modules" className="space-y-6">

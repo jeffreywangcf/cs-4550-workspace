@@ -101,6 +101,42 @@ export default function Dashboard() {
                         </div>
                     </Link>
                 </div>
+                <div className="card w-full bg-base-100 shadow-xl">
+                    <Link className="wd-dashboard-course-link" to="/Kanbas/Courses/1234/Home">
+                        <figure className="rounded-t-2xl">
+                            <img src="/images/POT105-cover.png" alt="React JS" className="w-full h-48 object-cover"/>
+                        </figure>
+                        <div className="card-body">
+                            <h5 className="card-title text-xl font-bold">
+                                POT 105
+                            </h5>
+                            <p className="wd-dashboard-course-title text-info-content">
+                                Potions I
+                            </p>
+                            <div className="card-actions justify-end">
+                                <button className="btn btn-primary">Go</button>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+                <div className="card w-full bg-base-100 shadow-xl">
+                    <Link className="wd-dashboard-course-link" to="/Kanbas/Courses/1234/Home">
+                        <figure className="rounded-t-2xl">
+                            <img src="/images/POT105-cover.png" alt="React JS" className="w-full h-48 object-cover"/>
+                        </figure>
+                        <div className="card-body">
+                            <h5 className="card-title text-xl font-bold">
+                                POT 106
+                            </h5>
+                            <p className="wd-dashboard-course-title text-info-content">
+                                Lab for Potions I
+                            </p>
+                            <div className="card-actions justify-end">
+                                <button className="btn btn-primary">Go</button>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
             </div>
         </div>
     );
