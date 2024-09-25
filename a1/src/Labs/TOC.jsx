@@ -13,9 +13,8 @@ export default function TOC() {
             <li><Link to="/Labs/Lab3">Lab 3</Link></li>
             <li><Link to="/Kanbas">Kanbas</Link></li>
 
-            {/* New GitHub Link with Icon */}
             <li>
-                <a href="https://google.com" id="wd-github" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/jeffreywangcf/cs-4550-workspace" id="wd-github" target="_blank" rel="noopener noreferrer">
                     Repository on <FaGithub/>
                 </a>
             </li>

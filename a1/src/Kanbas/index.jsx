@@ -15,6 +15,7 @@ export default function Kanbas() {
                     <Route path="/" element={<Navigate to="/Kanbas/Account"/>} />
                     <Route path="/Account/*" element={<Account/>} />
                     <Route path="/Dashboard" element={<Dashboard/>} />
+                    <Route path="/Courses" element={<Dashboard/>} />
                     <Route path="/Courses/:cid/*" element={<Courses/>} />
                     <Route path="/Calendar" element={<h1 id="wd-calendar" className="text-3xl font-bold">Calendar</h1>} />
                     <Route path="/Inbox" element={<h1 id="wd-inbox" className="text-3xl font-bold">Inbox</h1>} />

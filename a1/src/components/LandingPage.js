@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from 'react';
+import {Link} from "react-router-dom";
+import {FaGithub} from "react-icons/fa";
 
 const LandingPage = () => {
     const [theme, setTheme] = useState('winter');
@@ -54,9 +56,38 @@ const LandingPage = () => {
                 projects.
             </p>
 
-            <p className="text-3xl primary-content pt-24">More coming soon.</p>
+            <div className="w-1/4 mt-8 space-y-2">
+                <p className="text-2xl w-full">name: Jeffrey Wang</p>
+                <p className="text-2xl w-full">section: 02</p>
+                <a href="https://github.com/jeffreywangcf/cs-4550-workspace" id="wd-github" target="_blank" rel="noopener noreferrer"
+                   className="text-2xl w-full btn">
+                    Repository on <FaGithub/>
+                </a>
+            </div>
+
+            <div className="overflow-x-auto w-1/2 pt-12">
+                <table className="table table-zebra w-full">
+
+                    <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td className="text-xl">a1: Kanbas</td>
+                        <td>
+                            <Link to="/Kanbas" className="btn btn-sm btn-primary min-w-12">go</Link>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td className="text-xl">Labs</td>
+                        <td>
+                            <Link to="/#/labs" className="btn btn-sm btn-primary min-w-12">go</Link>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    );
+);
 };
 
 export default LandingPage;
