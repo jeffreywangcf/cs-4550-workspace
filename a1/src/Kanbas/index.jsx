@@ -6,23 +6,21 @@ import Courses from "./Courses";
 
 export default function Kanbas() {
     return (
-        <div id="wd-kanbas">
-            <table>
-                <tr>
-                    <td valign="top">
-                        <KanbasNavigation />
-                    </td>
-                    <td valign="top">
-                        <Routes>
-                            <Route path="/" element={<Navigate to="/Kanbas/Account" />} />
-                            <Route path="/Account/*" element={<Account />} />
-                            <Route path="/Dashboard" element={<Dashboard />} />
-                            <Route path="/Courses/:cid/*" element={<Courses />} />
-                            <Route path="/Calendar" element={<h1>Calendar</h1>} />
-                            <Route path="/Inbox" element={<h1>Inbox</h1>} />
-                        </Routes>
-                    </td>
-                </tr>
-            </table>
+        <div id="wd-kanbas" className="flex min-h-screen bg-base-100">
+            <aside className="w-1/6 p-4 bg-base-200 shadow-lg">
+                <KanbasNavigation />
+            </aside>
+            <main className="flex-grow p-6">
+                <Routes>
+                    <Route path="/" element={<Navigate to="/Kanbas/Account"/>} />
+                    <Route path="/Account/*" element={<Account/>} />
+                    <Route path="/Dashboard" element={<Dashboard/>} />
+                    <Route path="/Courses/:cid/*" element={<Courses/>} />
+                    <Route path="/Calendar" element={<h1 id="wd-calendar" className="text-3xl font-bold">Calendar</h1>} />
+                    <Route path="/Inbox" element={<h1 id="wd-inbox" className="text-3xl font-bold">Inbox</h1>} />
+                </Routes>
+            </main>
         </div>
-    );}
+    );
+}
+

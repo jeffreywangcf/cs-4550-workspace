@@ -8,6 +8,7 @@ export default function Labs() {
     return (
         <div className="p-8 max-w-4xl mx-auto space-y-8">
             <h1 className="text-4xl font-extrabold mb-4">Labs</h1>
+            <hp className="text-xl">Name: Jeffrey Wang</hp>
             <TOC/>
             <Routes>
                 <Route path="/" element={<Navigate to="Lab1" />} />
