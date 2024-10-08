@@ -13,16 +13,16 @@ export default function Courses() {
             <table className="w-full mt-4">
                 <tr>
                     <td valign="top" className="max-w-60">
-                        <CoursesNavigation />
+                        <CoursesNavigation/>
                     </td>
                     <td valign="top" className="w-full pl-6">
                         <Routes>
-                            <Route path="/" element={<Navigate to="Home" />} />
-                            <Route path="Home" element={<Home />} />
-                            <Route path="Modules" element={<Modules />} />
-                            <Route path="Assignments" element={<Assignments />} />
-                            <Route path="Assignments/:aid" element={<AssignmentEditor />} />
-                            <Route path="People" element={<h2>People</h2>} />
+                            <Route path="/" element={<Navigate to="Home"/>}/>
+                            <Route path="Home" element={<Home/>}/>
+                            <Route path="Modules" element={<Modules/>}/>
+                            <Route path="Assignments" element={<Assignments/>}/>
+                            <Route path="Assignments/:aid" element={<AssignmentEditor/>}/>
+                            <Route path="People" element={<h2>People</h2>}/>
                         </Routes>
                     </td>
                 </tr>
