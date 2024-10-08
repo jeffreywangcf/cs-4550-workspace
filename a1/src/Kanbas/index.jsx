@@ -7,7 +7,7 @@ import Courses from "./Courses";
 export default function Kanbas() {
     return (
         <div id="wd-kanbas" className="flex min-h-screen bg-base-100">
-            <aside className="w-1/6 p-4 bg-base-200 shadow-lg">
+            <aside className="wd-main-content-offset p-4 bg-base-200 shadow-lg">
                 <KanbasNavigation />
             </aside>
             <main className="flex-grow p-6">

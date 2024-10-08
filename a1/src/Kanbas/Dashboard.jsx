@@ -6,98 +6,112 @@ export default function Dashboard() {
             <h1 id="wd-dashboard-title" className="text-4xl font-bold mb-4">Dashboard</h1>
             <hr className="mb-6"/>
 
-            <h2 id="wd-dashboard-published" className="text-2xl font-semibold mb-4">Published Courses (5)</h2>
+            <h2 id="wd-dashboard-published" className="text-2xl font-semibold mb-4">Published Courses (8)</h2>
             <hr className="mb-6"/>
 
-            <div id="wd-dashboard-courses" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div id="wd-dashboard-courses" className="grid grid-cols-[repeat(auto-fit,minmax(16rem,16rem))] gap-8">
 
-                <div className="card w-full bg-base-100 shadow-xl">
-                    <Link className="wd-dashboard-course-link" to="/Kanbas/Courses/1234/Home">
+                <div className="card w-64 h-80 bg-base-100 shadow-lg">
+                    <Link to="/Kanbas/Courses/1234/Home">
                         <figure className="rounded-t-2xl">
-                            <img src="/images/TRS201-cover.png" alt="React JS" className="w-full h-48 object-cover"/>
+                            <img src="/images/courses/TRS201-cover.png" alt="React JS"
+                                 className="w-full h-40 object-center"/>
                         </figure>
-                        <div className="card-body">
-                            <h5 className="card-title text-xl font-bold">
-                                TRS 201
-                            </h5>
-                            <p className="wd-dashboard-course-title text-info-content">
-                                Transfiguration II
-                            </p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Go</button>
-                            </div>
+                        <div className="card-body pt-4">
+                            <h2 className="card-title">TRS 201</h2>
+                            <p>Transfiguration II</p>
+                            <p className="text-sm opacity-70">TRS201.1234 Fall 2024</p>
                         </div>
                     </Link>
                 </div>
-                <div className="card w-full bg-base-100 shadow-xl">
-                    <Link className="wd-dashboard-course-link" to="/Kanbas/Courses/1234/Home">
+                <div className="card w-64 h-80 bg-base-100 shadow-lg">
+                    <Link to="/Kanbas/Courses/1234/Home">
                         <figure className="rounded-t-2xl">
-                            <img src="/images/DADA441-cover.png" alt="React JS" className="w-full h-48 object-cover"/>
+                            <img src="/images/courses/DADA441-cover.png" alt="React JS"
+                                 className="w-full h-40 object-center"/>
                         </figure>
-                        <div className="card-body">
-                            <h5 className="card-title text-xl font-bold">
-                                DADA 441
-                            </h5>
-                            <p className="wd-dashboard-course-title text-info-content">
-                                Defense Against Unforgivable Curses
-                            </p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Go</button>
-                            </div>
+                        <div className="card-body pt-4">
+                            <h2 className="card-title">DADA 441</h2>
+                            <p>Defense Against Unforgivable Curses</p>
+                            <p className="text-sm opacity-70">DADA 411.1234 Fall 2024</p>
                         </div>
                     </Link>
                 </div>
-                <div className="card w-full bg-base-100 shadow-xl">
-                    <Link className="wd-dashboard-course-link" to="/Kanbas/Courses/1234/Home">
+                <div className="card w-64 h-80 bg-base-100 shadow-lg">
+                    <Link to="/Kanbas/Courses/1234/Home">
                         <figure className="rounded-t-2xl">
-                            <img src="/images/RAV01-cover.png" alt="React JS" className="w-full h-48 object-cover"/>
+                            <img src="/images/courses/RAV01-cover.png" alt="React JS"
+                                 className="w-full h-40 object-center"/>
                         </figure>
-                        <div className="card-body">
-                            <h5 className="card-title text-xl font-bold">
-                                RAV 01
-                            </h5>
-                            <p className="wd-dashboard-course-title text-info-content">
-                                Ravenclaw First Year Seminar
-                            </p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Go</button>
-                            </div>
+                        <div className="card-body pt-4">
+                            <h2 className="card-title">RAV 01</h2>
+                            <p>Ravenclaw First Year Seminar</p>
+                            <p className="text-sm opacity-70">RAV01.1234 Fall 2024</p>
                         </div>
                     </Link>
                 </div>
-                <div className="card w-full bg-base-100 shadow-xl">
-                    <Link className="wd-dashboard-course-link" to="/Kanbas/Courses/1234/Home">
+                <div className="card w-64 h-80 bg-base-100 shadow-lg">
+                    <Link to="/Kanbas/Courses/1234/Home">
                         <figure className="rounded-t-2xl">
-                            <img src="/images/MUG302-cover.png" alt="React JS" className="w-full h-48 object-cover"/>
+                            <img src="/images/courses/MUG302-cover.png" alt="React JS"
+                                 className="w-full h-40 object-center"/>
                         </figure>
-                        <div className="card-body">
-                            <h5 className="card-title text-xl font-bold">
-                                MUG 302
-                            </h5>
-                            <p className="wd-dashboard-course-title text-info-content">
-                                Musics from the Muggle World
-                            </p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Go</button>
-                            </div>
+                        <div className="card-body pt-4">
+                            <h2 className="card-title">MUG 302</h2>
+                            <p>Music of the Muggle World</p>
+                            <p className="text-sm opacity-70">MUG302.1234 Fall 2024</p>
                         </div>
                     </Link>
                 </div>
-                <div className="card w-full bg-base-100 shadow-xl">
-                    <Link className="wd-dashboard-course-link" to="/Kanbas/Courses/1234/Home">
+                <div className="card w-64 h-80 bg-base-100 shadow-lg">
+                    <Link to="/Kanbas/Courses/1234/Home">
                         <figure className="rounded-t-2xl">
-                            <img src="/images/OWL500-cover.png" alt="React JS" className="w-full h-48 object-cover"/>
+                            <img src="/images/courses/OWL500-cover.png" alt="React JS"
+                                 className="w-full h-40 object-center"/>
                         </figure>
-                        <div className="card-body">
-                            <h5 className="card-title text-xl font-bold">
-                                OWL 500
-                            </h5>
-                            <p className="wd-dashboard-course-title text-info-content">
-                                Introduction to Ordinary Wizarding Level Exam
-                            </p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Go</button>
-                            </div>
+                        <div className="card-body pt-4">
+                            <h2 className="card-title">OWL 501</h2>
+                            <p>Ordinary Wizarding Level Exam Preparation</p>
+                            <p className="text-sm opacity-70">OWL501.1234 Fall 2024</p>
+                        </div>
+                    </Link>
+                </div>
+                <div className="card w-64 h-80 bg-base-100 shadow-lg">
+                    <Link to="/Kanbas/Courses/1234/Home">
+                        <figure className="rounded-t-2xl">
+                            <img src="/images/courses/POT105-cover.png" alt="React JS"
+                                 className="w-full h-40 object-center"/>
+                        </figure>
+                        <div className="card-body pt-4">
+                            <h2 className="card-title">POT 105</h2>
+                            <p>Potion I</p>
+                            <p className="text-sm opacity-70">POT105.1234 Fall 2024</p>
+                        </div>
+                    </Link>
+                </div>
+                <div className="card w-64 h-80 bg-base-100 shadow-lg">
+                    <Link to="/Kanbas/Courses/1234/Home">
+                        <figure className="rounded-t-2xl">
+                            <img src="/images/courses/POT105-cover.png" alt="React JS"
+                                 className="w-full h-40 object-center"/>
+                        </figure>
+                        <div className="card-body pt-4">
+                            <h2 className="card-title">POT 106</h2>
+                            <p>Lab for Potion I</p>
+                            <p className="text-sm opacity-70">POT105.1234 Fall 2024</p>
+                        </div>
+                    </Link>
+                </div>
+                <div className="card w-64 h-80 bg-base-100 shadow-lg">
+                    <Link to="/Kanbas/Courses/1234/Home">
+                        <figure className="rounded-t-2xl">
+                            <img src="/images/courses/DADA320-cover.png" alt="React JS"
+                                 className="w-full h-40 object-center"/>
+                        </figure>
+                        <div className="card-body pt-4">
+                            <h2 className="card-title">DADA 320</h2>
+                            <p>Patronus Theory and Application</p>
+                            <p className="text-sm opacity-70">DADA 320.1234 Fall 2024</p>
                         </div>
                     </Link>
                 </div>
