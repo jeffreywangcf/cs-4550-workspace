@@ -13,7 +13,7 @@ export default function Kanbas() {
             </aside>
             <main className="flex-grow p-6">
                 <Routes>
-                    <Route path="/" element={<Navigate to="/Kanbas/Account"/>} />
+                    <Route path="/" element={<Navigate to="/Kanbas/Dashboard"/>} />
                     <Route path="/Account/*" element={<Account/>} />
                     <Route path="/Dashboard" element={<Dashboard/>} />
                     <Route path="/Courses" element={<Dashboard/>} />
