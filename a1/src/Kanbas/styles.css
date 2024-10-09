@@ -1,5 +1,6 @@
 @media (min-width: 768px) {
     #wd-kanbas .wd-main-content-offset {
-        padding-left: 140px !important;
+        max-width: 112px !important;
+        min-width: 112px !important;
     }
 }

@@ -3,11 +3,12 @@ import Account from "./Account";
 import Dashboard from "./Dashboard";
 import KanbasNavigation from "./Navigation";
 import Courses from "./Courses";
+import "./styles.css"
 
 export default function Kanbas() {
     return (
         <div id="wd-kanbas" className="flex min-h-screen bg-base-100">
-            <aside className="wd-main-content-offset p-4 bg-base-200 shadow-lg">
+            <aside className="wd-main-content-offset">
                 <KanbasNavigation />
             </aside>
             <main className="flex-grow p-6">

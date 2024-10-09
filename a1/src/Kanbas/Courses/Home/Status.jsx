@@ -1,6 +1,6 @@
 export default function CourseStatus() {
     return (
-        <div id="wd-course-status" className="artboard artboard-demo p-6 max-w-xs bg-base-200 shadow-lg rounded-lg">
+        <div id="wd-course-status" className="artboard artboard-demo p-6 max-w-xs min-w-56 bg-base-200 shadow-lg rounded-lg hidden lg:block">
             <h2 className="text-2xl font-bold mb-4">Course Status</h2>
 
             <div className="grid grid-cols-2 gap-4 mb-4">

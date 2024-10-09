@@ -62,7 +62,7 @@ export default function Profile() {
             <div className="mt-4">
                 <Link
                     to="/Kanbas/Account/Signin"
-                    className="btn btn-primary"
+                    className="btn btn-warning"
                 >
                     Sign out
                 </Link>
