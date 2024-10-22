@@ -1,0 +1,185 @@
+{
+    "people": [
+        {
+            "uid": "P1",
+            "name": "Albus Dumbledore",
+            "role": "Instructor",
+            "courses": [
+                "TRS201"
+            ],
+            "section": 1,
+            "loginId": "123456789",
+            "lastActivity": "2024-10-21T09:45:32",
+            "totalActivity": 763,
+            "img": "/images/avatars/instructor.png"
+        },
+        {
+            "uid": "P2",
+            "name": "Severus Snape",
+            "role": "Instructor",
+            "courses": [
+                "POT105",
+                "POT106"
+            ],
+            "section": 2,
+            "loginId": "234567890",
+            "lastActivity": "2024-10-20T15:32:12",
+            "totalActivity": 835,
+            "img": "/images/avatars/instructor.png"
+        },
+        {
+            "uid": "P3",
+            "name": "Remus Lupin",
+            "role": "Instructor",
+            "courses": [
+                "DADA441",
+                "DADA320"
+            ],
+            "section": 1,
+            "loginId": "345678901",
+            "lastActivity": "2024-10-19T08:21:45",
+            "totalActivity": 710,
+            "img": "/images/avatars/instructor.png"
+        },
+        {
+            "uid": "P4",
+            "name": "Hermione Granger",
+            "role": "Teaching Assistant",
+            "courses": [
+                "TRS201",
+                "MUG302"
+            ],
+            "section": 3,
+            "loginId": "456789012",
+            "lastActivity": "2024-10-19T10:15:03",
+            "totalActivity": 555,
+            "img": "/images/avatars/ta.png"
+        },
+        {
+            "uid": "P5",
+            "name": "Cedric Diggory",
+            "role": "Teaching Assistant",
+            "courses": [
+                "POT105",
+                "POT106"
+            ],
+            "section": 2,
+            "loginId": "567890123",
+            "lastActivity": "2024-10-18T14:45:22",
+            "totalActivity": 470,
+            "img": "/images/avatars/ta.png"
+        },
+        {
+            "uid": "P6",
+            "name": "Harry Potter",
+            "role": "Student",
+            "courses": [
+                "TRS201",
+                "DADA441",
+                "POT105",
+                "DADA320"
+            ],
+            "section": 1,
+            "loginId": "678901234",
+            "lastActivity": "2024-10-18T12:21:33",
+            "totalActivity": 320,
+            "img": "/images/avatars/student.png"
+        },
+        {
+            "uid": "P7",
+            "name": "Ron Weasley",
+            "role": "Student",
+            "courses": [
+                "OWL501",
+                "TRS201"
+            ],
+            "section": 2,
+            "loginId": "789012345",
+            "lastActivity": "2024-10-19T09:45:12",
+            "totalActivity": 410,
+            "img": "/images/avatars/student.png"
+        },
+        {
+            "uid": "P8",
+            "name": "Draco Malfoy",
+            "role": "Student",
+            "courses": [
+                "DADA441"
+            ],
+            "section": 1,
+            "loginId": "890123456",
+            "lastActivity": "2024-10-21T07:18:09",
+            "totalActivity": 530,
+            "img": "/images/avatars/student.png"
+        },
+        {
+            "uid": "P9",
+            "name": "Luna Lovegood",
+            "role": "Student",
+            "courses": [
+                "RAV01"
+            ],
+            "section": 3,
+            "loginId": "901234567",
+            "lastActivity": "2024-10-19T11:10:21",
+            "totalActivity": 205,
+            "img": "/images/avatars/student.png"
+        },
+        {
+            "uid": "P10",
+            "name": "Neville Longbottom",
+            "role": "Student",
+            "courses": [
+                "POT105",
+                "POT106"
+            ],
+            "section": 2,
+            "loginId": "012345678",
+            "lastActivity": "2024-10-20T08:32:15",
+            "totalActivity": 335,
+            "img": "/images/avatars/student.png"
+        },
+        {
+            "uid": "P11",
+            "name": "Cho Chang",
+            "role": "Student",
+            "courses": [
+                "RAV01",
+                "MUG302"
+            ],
+            "section": 1,
+            "loginId": "112233445",
+            "lastActivity": "2024-10-21T10:45:30",
+            "totalActivity": 290,
+            "img": "/images/avatars/student.png"
+        },
+        {
+            "uid": "P12",
+            "name": "Padma Patil",
+            "role": "Student",
+            "courses": [
+                "MUG302",
+                "OWL501",
+                "DADA320"
+            ],
+            "section": 2,
+            "loginId": "223344556",
+            "lastActivity": "2024-10-20T16:50:10",
+            "totalActivity": 215,
+            "img": "/images/avatars/student.png"
+        },
+        {
+            "uid": "P21",
+            "name": "Dolores Umbridge",
+            "role": "Instructor",
+            "courses": [
+                "OWL501"
+            ],
+            "section": 1,
+            "loginId": "123456244",
+            "lastActivity": "2024-10-21T09:45:32",
+            "totalActivity": 763,
+            "img": "/images/avatars/instructor.png"
+        }
+    ]
+}
