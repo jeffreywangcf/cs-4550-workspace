@@ -1,5 +1,6 @@
+import courses from '../Database/courses.json';
 import CoursesNavigation from "./Navigation";
-import { Navigate, Route, Routes } from "react-router";
+import { Navigate, Route, Routes, useParams } from "react-router";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
@@ -7,9 +8,11 @@ import AssignmentEditor from "./Assignments/Editor";
 import People from "./People";
 
 export default function Courses() {
+    const { cid } = useParams();
+    const course = courses.find((course) => course.id === cid);
     return (
         <div id="wd-courses" className="p-6">
-            <h2 className="text-3xl font-bold mb-4">MUG 302: Musics from the Muggle World</h2>
+            <h2 className="text-3xl font-bold mb-4">{course && course.name}</h2>
             <hr />
 
             <div className="flex mt-4">
