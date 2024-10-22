@@ -26,16 +26,19 @@ export default function BootstrapNavigation() {
                     </li>
                 </ul>
             </div>
-            <div id="wd-css-navigating-with-cards">
-                <h2>Cards</h2>
-                <div className="card" style={{ width: "18rem" }}>
-                    <img src="images/stacked.jpg" className="card-img-top" />
+
+            <div id="wd-css-navigating-with-cards" className="mt-8">
+                <h2 className="text-2xl font-bold mb-4">Cards</h2>
+                <div className="card w-72 bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="images/labs/teslabot.png" alt="Stacking Starship" />
+                    </figure>
                     <div className="card-body">
                         <h5 className="card-title">Stacking Starship</h5>
                         <p className="card-text">
                             Stacking the most powerful rocket in history. Mars or bust!
                         </p>
-                        <a href="#" className="btn btn-primary">
+                        <a href="#" className="btn">
                             Boldly Go
                         </a>
                     </div>

@@ -6,7 +6,7 @@ export default function ReactIconsSampler() {
     return (
         <div id="wd-react-icons-sampler" className="mb-4">
             <h3>React Icons Sampler</h3>
-            <div className="d-flex">
+            <div className="flex space-x-4">
                 <VscAccount className="fs-3 text" />
                 <AiOutlineDashboard className="fs-3 text" />
                 <FaBookBible className="fs-3 text" />

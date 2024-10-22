@@ -1,0 +1,108 @@
+
+.lab_specific {
+
+    body {
+        @apply bg-base-100 text-base-content font-sans;
+    }
+
+    h1 {
+        @apply text-4xl font-extrabold mb-6;
+    }
+
+    h2 {
+        @apply text-3xl font-bold mb-4;
+    }
+
+    h3 {
+        @apply text-2xl font-semibold mb-3;
+    }
+
+    h4 {
+        @apply text-xl font-medium mb-2;
+    }
+
+    h5 {
+        @apply text-lg font-medium mb-1;
+    }
+
+    h6 {
+        @apply text-base font-medium;
+    }
+
+    p {
+        @apply mb-4 text-base;
+    }
+
+    a {
+        @apply text-primary hover:underline;
+    }
+
+    ul {
+        @apply list-disc list-inside mb-4;
+    }
+
+    ol {
+        @apply list-decimal list-inside mb-4;
+    }
+
+    li {
+        @apply mb-1;
+    }
+
+    table {
+        @apply table-auto w-full border-collapse mb-6;
+    }
+
+    th, td {
+        @apply p-2 border border-base-300;
+    }
+
+    thead th {
+        @apply bg-neutral text-neutral-content;
+    }
+
+    tbody tr:nth-child(odd) {
+        @apply bg-base-200;
+    }
+
+    tbody tr:nth-child(even) {
+        @apply bg-base-100;
+    }
+
+    hr {
+        @apply border-t-2 border-base-300 my-6;
+    }
+
+    blockquote {
+        @apply p-4 border-l-4 border-primary bg-base-200 italic;
+    }
+
+    code {
+        @apply bg-base-200 text-primary px-1 rounded;
+    }
+
+    button {
+        @apply bg-primary text-primary-content font-medium py-2 px-4 rounded;
+    }
+
+    input, select, textarea {
+        @apply border border-base-300 p-2 rounded mb-4 w-full;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        @apply outline-none ring-2 ring-primary;
+    }
+
+    img {
+        @apply max-w-full rounded shadow-lg;
+    }
+
+    section {
+        @apply mb-8;
+    }
+
+    footer {
+        @apply bg-neutral text-neutral-content p-6;
+    }
+}
+

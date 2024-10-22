@@ -1,8 +1,8 @@
-export default function BootstrapTables() {
+export default function BoostrapTables() {
     return (
         <div id="wd-css-styling-tables">
-            <h2>Tables</h2>
-            <table className="table">
+            <h2 className="text-2xl font-bold mb-4">Tables</h2>
+            <table className="table w-full">
                 <thead>
                 <tr className="table-dark">
                     <th>Quiz</th>
@@ -38,10 +38,11 @@ export default function BootstrapTables() {
                 </tr>
                 </tfoot>
             </table>
-            <div id="wd-css-responsive-tables">
-                <h2>Responsive tables</h2>
-                <div className="table-responsive">
-                    <table className="table">
+
+            <div id="wd-css-responsive-tables" className="mt-8">
+                <h2 className="text-2xl font-bold mb-4">Responsive tables</h2>
+                <div className="overflow-x-auto">
+                    <table className="table w-full">
                         <thead>
                         <tr>
                             <th>Very</th>

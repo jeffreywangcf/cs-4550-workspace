@@ -1,140 +1,70 @@
 export default function BootstrapGrids() {
     return (
-        <div id="wd-bs-grid-system">
-            <h2>Grid system</h2>
-            <div className="row">
-                <div className="col bg-danger text-white">
-                    <h3>Left half</h3>
+        <div id="wd-tw-grid-system" >
+            <h2 className="text-2xl font-bold">Grid system</h2>
+            <div className="grid grid-cols-2">
+                <div className="bg-red-500 text-white">
+                    <h3 className="text-lg font-semibold">Left half</h3>
                 </div>
-                <div className="col bg-primary text-white">
-                    <h3>Right half</h3>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-4 bg-warning">
-                    <h3>One thirds</h3>
-                </div>
-                <div className="col-8 bg-success text-white">
-                    <h3>Two thirds</h3>
+                <div className="bg-blue-500 text-white">
+                    <h3 className="text-lg font-semibold">Right half</h3>
                 </div>
             </div>
-            <div className="row">
-                <div className="col-2 bg-dark text-white">
-                    <h3>Sidebar</h3>
+
+            <div className="grid grid-cols-12">
+                <div className="col-span-4 bg-yellow-500">
+                    <h3 className="text-lg font-semibold">One third</h3>
                 </div>
-                <div className="col-8 bg-secondary text-white">
-                    <h3>Main content</h3>
-                </div>
-                <div className="col-2 bg-info">
-                    <h3>Sidebar</h3>
+                <div className="col-span-8 bg-green-500 text-white">
+                    <h3 className="text-lg font-semibold">Two thirds</h3>
                 </div>
             </div>
-            <div id="wd-bs-responsive-grids">
-                <h2>Responsive grid system</h2>
-                <div className="row">
-                    <div
-                        className="col-12 col-md-6 col-xl-3
-                    bg-warning"
-                    >
-                        <h3>Column A</h3>
+
+            <div className="grid grid-cols-12">
+                <div className="col-span-2 bg-gray-900 text-white">
+                    <h3 className="text-lg font-semibold">Sidebar</h3>
+                </div>
+                <div className="col-span-8 bg-gray-600 text-white">
+                    <h3 className="text-lg font-semibold">Main content</h3>
+                </div>
+                <div className="col-span-2 bg-cyan-500">
+                    <h3 className="text-lg font-semibold">Sidebar</h3>
+                </div>
+            </div>
+
+            <div id="wd-tw-responsive-grids" className="mt-8">
+                <h2 className="text-2xl font-bold">Responsive grid system</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+                    <div className="bg-yellow-500">
+                        <h3 className="text-lg font-semibold">Column A</h3>
                     </div>
-                    <div
-                        className="col-12 col-md-6 col-xl-3
-                    bg-primary text-white"
-                    >
-                        <h3>Column B</h3>
+                    <div className="bg-blue-500 text-white">
+                        <h3 className="text-lg font-semibold">Column B</h3>
                     </div>
-                    <div
-                        className="col-12 col-md-6 col-xl-3
-                    bg-danger text-white"
-                    >
-                        <h3>Column C</h3>
+                    <div className="bg-red-500 text-white">
+                        <h3 className="text-lg font-semibold">Column C</h3>
                     </div>
-                    <div
-                        className="col-12 col-md-6 col-xl-3
-                    bg-success text-white"
-                    >
-                        <h3>Column D</h3>
+                    <div className="bg-green-500 text-white">
+                        <h3 className="text-lg font-semibold">Column D</h3>
                     </div>
                 </div>
             </div>
-            <div id="wd-bs-responsive-dramatic">
-                <h2>Responsive grid system</h2>
-                <div className="row">
-                    <div
-                        className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1
-                    bg-warning"
-                    >
-                        <h4>1</h4>
-                    </div>
-                    <div
-                        className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1
-                    bg-primary text-white"
-                    >
-                        <h4>2</h4>
-                    </div>
-                    <div
-                        className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1
-                    bg-danger text-white"
-                    >
-                        <h4>3</h4>
-                    </div>
-                    <div
-                        className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1
-                    bg-success text-white"
-                    >
-                        <h4>4</h4>
-                    </div>
-                    <div
-                        className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1
-                    bg-warning"
-                    >
-                        <h4>5</h4>
-                    </div>
-                    <div
-                        className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1
-                    bg-primary text-white"
-                    >
-                        <h4>6</h4>
-                    </div>
-                    <div
-                        className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1
-                    bg-danger text-white"
-                    >
-                        <h4>7</h4>
-                    </div>
-                    <div
-                        className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1
-                    bg-success text-white"
-                    >
-                        <h4>8</h4>
-                    </div>
-                    <div
-                        className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1
-                    bg-warning"
-                    >
-                        <h4>9</h4>
-                    </div>
-                    <div
-                        className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1
-                    bg-primary text-white"
-                    >
-                        <h4>10</h4>
-                    </div>
-                    <div
-                        className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1
-                    bg-danger text-white"
-                    >
-                        <h4>11</h4>
-                    </div>
-                    <div
-                        className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1
-                    bg-success text-white"
-                    >
-                        <h4>12</h4>
-                    </div>
+
+            <div id="wd-tw-responsive-dramatic" className="mt-8">
+                <h2 className="text-2xl font-bold">Responsive dramatic grid system</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-12">
+                    {Array.from({ length: 12 }).map((_, i) => (
+                        <div key={i} className={`p-4 ${getBgClass(i)} text-white`}>
+                            <h4 className="text-lg font-semibold">{i + 1}</h4>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
     );
 }
+
+const getBgClass = (index) => {
+    const colors = ['bg-yellow-500', 'bg-blue-500', 'bg-red-500', 'bg-green-500'];
+    return colors[index % colors.length];
+};
