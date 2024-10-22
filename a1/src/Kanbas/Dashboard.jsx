@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import courses from "./Database/courses.json"
+import {courses} from "./Database";
 
 export default function Dashboard() {
     return (

@@ -1,11 +1,22 @@
+import {Link, useParams} from "react-router-dom";
+import { assignments } from "../../Database";
+
 export default function AssignmentEditor() {
+    const onlineEntryOptions = ["text-entry", "website-url", "media-recording", "student-annotation", "file-upload"]
+    const { cid, aid } = useParams();
+    const ca = assignments[cid];
+    const assignment = ca ? ca.find((a) => a.id === aid) : null;
+
+    if (!assignment) {
+        return <div className="alert-error m-4">No such assignment.</div>;
+    }
     return (
         <form id="wd-assignments-editor" className="p-8 max-w-2xl space-y-8">
             <div>
                 <label htmlFor="wd-name" className="block font-bold mb-1 text-xl">Assignment Name</label>
                 <input
                     id="wd-name"
-                    value="A1 - ENV + HTML"
+                    value={assignment.name}
                     className="input input-bordered w-full mb-4 p-2 border border-base-300 rounded"
                 />
             </div>
@@ -17,7 +28,7 @@ export default function AssignmentEditor() {
                     id="wd-description"
                     className="textarea textarea-bordered w-full h-32 mb-4 p-2 border border-base-300 rounded"
                 >
-        The assignment is available online. Submit a link to the landing page of...
+                {assignment.description}
             </textarea>
             </div>
 
@@ -27,7 +38,7 @@ export default function AssignmentEditor() {
                 <input
                     type="number"
                     id="wd-points"
-                    value={100}
+                    value={assignment.points}
                     className="input input-bordered p-2 border border-base-300 rounded w-full"
                 />
             </div>
@@ -37,7 +48,7 @@ export default function AssignmentEditor() {
                 <label htmlFor="wd-group" className="block font-bold mb-1 text-xl">Assignment Group</label>
                 <select
                     id="wd-group"
-                    defaultValue="assignment"
+                    value={assignment.group}
                     className="select select-bordered w-full p-2 border border-base-300 rounded"
                 >
                     <option value="assignment">Assignment</option>
@@ -51,7 +62,7 @@ export default function AssignmentEditor() {
                 <label htmlFor="wd-display-grade-as" className="block font-bold mb-1 text-xl">Display Grade As</label>
                 <select
                     id="wd-display-grade-as"
-                    defaultValue="percentage"
+                    value={assignment.displayGradeAs}
                     className="select select-bordered w-full p-2 border border-base-300 rounded"
                 >
                     <option value="percentage">Percentage</option>
@@ -64,33 +75,24 @@ export default function AssignmentEditor() {
                 <label htmlFor="wd-submission-type" className="block font-bold mb-1 text-xl">Submission Type</label>
                 <select
                     id="wd-submission-type"
-                    defaultValue="online"
+                    value={assignment.submissionType.type}
                     className="select select-bordered w-full p-2 border border-base-300 rounded"
                 >
                     <option value="online">Online</option>
                 </select>
                 <label className="block font-bold mb-1 mt-1">Online Entry Options</label>
                 <div className="flex flex-col space-y-2">
-                    <label className="inline-flex items-center">
-                        <input type="checkbox" id="wd-text-entry" value="text-entry" className="checkbox"/>
-                        <span className="ml-2">Text Entry</span>
-                    </label>
-                    <label className="inline-flex items-center">
-                        <input type="checkbox" id="wd-text-entry" value="website-url" className="checkbox"/>
-                        <span className="ml-2">Website URL</span>
-                    </label>
-                    <label className="inline-flex items-center">
-                        <input type="checkbox" id="wd-text-entry" value="media-recording" className="checkbox"/>
-                        <span className="ml-2">Media Recording</span>
-                    </label>
-                    <label className="inline-flex items-center">
-                        <input type="checkbox" id="wd-text-entry" value="student-annotation" className="checkbox"/>
-                        <span className="ml-2">Student Annotation</span>
-                    </label>
-                    <label className="inline-flex items-center">
-                        <input type="checkbox" id="wd-text-entry" value="file-upload" className="checkbox"/>
-                        <span className="ml-2">File Upload</span>
-                    </label>
+                    {onlineEntryOptions.map((option) => (
+                        <label key={option} className="inline-flex items-center">
+                            <input
+                                type="checkbox"
+                                value={option}
+                                className="checkbox"
+                                checked={assignment.submissionType.onlineEntryOptions.includes(option)}
+                            />
+                            <span className="ml-2 capitalize">{option.replace("-", " ")}</span>
+                        </label>
+                    ))}
                 </div>
             </div>
 
@@ -112,6 +114,7 @@ export default function AssignmentEditor() {
                     <input
                         type="datetime-local"
                         id="wd-due-date"
+                        value={new Date(assignment.dueDate).toISOString().slice(0, 16)}
                         className="input input-bordered p-2 border border-base-300 rounded w-full"
                     />
                 </div>
@@ -124,6 +127,7 @@ export default function AssignmentEditor() {
                         <input
                             type="datetime-local"
                             id="wd-available-from"
+                            value={new Date(assignment.availableFrom).toISOString().slice(0, 16)}
                             className="input input-bordered p-2 border border-base-300 rounded w-full"
                         />
                     </div>
@@ -133,6 +137,7 @@ export default function AssignmentEditor() {
                         <input
                             type="datetime-local"
                             id="wd-available-until"
+                            value={new Date(assignment.availableUntil).toISOString().slice(0, 16)}
                             className="input input-bordered p-2 border border-base-300 rounded w-full"
                         />
                     </div>
@@ -141,12 +146,12 @@ export default function AssignmentEditor() {
 
             <div className="flex justify-end mt-4">
                 <div className="join">
-                    <button className="btn join-item">
+                    <Link to={`/Kanbas/Courses/${cid}/Assignments`} className="btn join-item">
                         Cancel
-                    </button>
-                    <button className="btn btn-primary join-item">
-                        Submit
-                    </button>
+                    </Link>
+                    <Link to={`/Kanbas/Courses/${cid}/Assignments`} className="btn btn-primary join-item">
+                        Save
+                    </Link>
                 </div>
             </div>
         </form>

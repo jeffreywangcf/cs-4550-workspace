@@ -1,74 +1,74 @@
 [
-  {
-    "id": "TRS201",
-    "name": "Transfiguration II",
-    "courseCode": "TRS201.1234",
-    "semester": "Fall 2024",
-    "image": "/images/courses/TRS201-cover.png",
-    "description": "An advanced course in the magical art of transfiguration.",
-    "link": "/Kanbas/Courses/TRS201/Home"
-  },
-  {
-    "id": "DADA441",
-    "name": "Defense Against Unforgivable Curses",
-    "courseCode": "DADA411.1234",
-    "semester": "Fall 2024",
-    "image": "/images/courses/DADA441-cover.png",
-    "description": "A comprehensive study of defense mechanisms against the Unforgivable Curses.",
-    "link": "/Kanbas/Courses/DADA441/Home"
-  },
-  {
-    "id": "RAV01",
-    "name": "Ravenclaw First Year Seminar",
-    "courseCode": "RAV01.1234",
-    "semester": "Fall 2024",
-    "image": "/images/courses/RAV01-cover.png",
-    "description": "An introduction to Ravenclaw values and academic excellence.",
-    "link": "/Kanbas/Courses/RAV01/Home"
-  },
-  {
-    "id": "MUG302",
-    "name": "Music of the Muggle World",
-    "courseCode": "MUG302.1234",
-    "semester": "Fall 2024",
-    "image": "/images/courses/MUG302-cover.png",
-    "description": "A study of Muggle musical history and culture.",
-    "link": "/Kanbas/Courses/MUG302/Home"
-  },
-  {
-    "id": "OWL501",
-    "name": "Ordinary Wizarding Level Exam Preparation",
-    "courseCode": "OWL501.1234",
-    "semester": "Fall 2024",
-    "image": "/images/courses/OWL500-cover.png",
-    "description": "A course dedicated to preparing for the OWL exams.",
-    "link": "/Kanbas/Courses/OWL501/Home"
-  },
-  {
-    "id": "POT105",
-    "name": "Potion I",
-    "courseCode": "POT105.1234",
-    "semester": "Fall 2024",
-    "image": "/images/courses/POT105-cover.png",
-    "description": "An introductory course on potion brewing and its applications.",
-    "link": "/Kanbas/Courses/POT105/Home"
-  },
-  {
-    "id": "POT106",
-    "name": "Lab for Potion I",
-    "courseCode": "POT105.1234",
-    "semester": "Fall 2024",
-    "image": "/images/courses/POT105-cover.png",
-    "description": "A practical lab course to accompany Potion I.",
-    "link": "/Kanbas/Courses/POT106/Home"
-  },
-  {
-    "id": "DADA320",
-    "name": "Patronus Theory and Application",
-    "courseCode": "DADA320.1234",
-    "semester": "Fall 2024",
-    "image": "/images/courses/DADA320-cover.png",
-    "description": "A study of the theory and practical application of the Patronus charm.",
-    "link": "/Kanbas/Courses/DADA320/Home"
-  }
+    {
+        "id": "TRS201",
+        "name": "Transfiguration II",
+        "courseCode": "TRS201.1234",
+        "semester": "Fall 2024",
+        "image": "/images/courses/TRS201-cover.png",
+        "description": "An advanced course in the magical art of transfiguration.",
+        "link": "/Kanbas/Courses/TRS201/Home"
+    },
+    {
+        "id": "DADA441",
+        "name": "Defense Against Unforgivable Curses",
+        "courseCode": "DADA411.1234",
+        "semester": "Fall 2024",
+        "image": "/images/courses/DADA441-cover.png",
+        "description": "A comprehensive study of defense mechanisms against the Unforgivable Curses.",
+        "link": "/Kanbas/Courses/DADA441/Home"
+    },
+    {
+        "id": "RAV01",
+        "name": "Ravenclaw First Year Seminar",
+        "courseCode": "RAV01.1234",
+        "semester": "Fall 2024",
+        "image": "/images/courses/RAV01-cover.png",
+        "description": "An introduction to Ravenclaw values and academic excellence.",
+        "link": "/Kanbas/Courses/RAV01/Home"
+    },
+    {
+        "id": "MUG302",
+        "name": "Music of the Muggle World",
+        "courseCode": "MUG302.1234",
+        "semester": "Fall 2024",
+        "image": "/images/courses/MUG302-cover.png",
+        "description": "A study of Muggle musical history and culture.",
+        "link": "/Kanbas/Courses/MUG302/Home"
+    },
+    {
+        "id": "OWL501",
+        "name": "Ordinary Wizarding Level Exam Preparation",
+        "courseCode": "OWL501.1234",
+        "semester": "Fall 2024",
+        "image": "/images/courses/OWL500-cover.png",
+        "description": "A course dedicated to preparing for the OWL exams.",
+        "link": "/Kanbas/Courses/OWL501/Home"
+    },
+    {
+        "id": "POT105",
+        "name": "Potion I",
+        "courseCode": "POT105.1234",
+        "semester": "Fall 2024",
+        "image": "/images/courses/POT105-cover.png",
+        "description": "An introductory course on potion brewing and its applications.",
+        "link": "/Kanbas/Courses/POT105/Home"
+    },
+    {
+        "id": "POT106",
+        "name": "Lab for Potion I",
+        "courseCode": "POT105.1234",
+        "semester": "Fall 2024",
+        "image": "/images/courses/POT105-cover.png",
+        "description": "A practical lab course to accompany Potion I.",
+        "link": "/Kanbas/Courses/POT106/Home"
+    },
+    {
+        "id": "DADA320",
+        "name": "Patronus Theory and Application",
+        "courseCode": "DADA320.1234",
+        "semester": "Fall 2024",
+        "image": "/images/courses/DADA320-cover.png",
+        "description": "A study of the theory and practical application of the Patronus charm.",
+        "link": "/Kanbas/Courses/DADA320/Home"
+    }
 ]

@@ -1,5 +1,5 @@
 import {Link, useLocation} from "react-router-dom";
-import navigationLinks from "./Database/navigation_links.json";
+import {navigationLinks} from "./Database";
 import {FaHatWizard} from "react-icons/fa";
 import {FaWandSparkles} from "react-icons/fa6";
 import {GiMagicGate, GiOwl} from "react-icons/gi";

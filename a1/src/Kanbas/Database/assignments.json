@@ -1,0 +1,195 @@
+{
+    "TRS201": [
+        {
+            "id": "TRS201_1",
+            "name": "Object Transmutation Experiment",
+            "description": "Transmute a simple object into another form, following the principles of object transmutation discussed in Week 2.",
+            "points": 100,
+            "group": "assignment",
+            "displayGradeAs": "percentage",
+            "submissionType": {
+                "type": "online",
+                "onlineEntryOptions": [
+                    "text-entry",
+                    "file-upload"
+                ]
+            },
+            "dueDate": "2024-10-30T23:59",
+            "availableFrom": "2024-10-15T00:00",
+            "availableUntil": "2024-11-01T23:59"
+        },
+        {
+            "id": "TRS201_2",
+            "name": "Living to Non-living Transformation Essay",
+            "description": "Write an essay on the challenges and ethical considerations of transforming living creatures into non-living objects.",
+            "points": 50,
+            "group": "essay",
+            "displayGradeAs": "letter",
+            "submissionType": {
+                "type": "online",
+                "onlineEntryOptions": [
+                    "text-entry",
+                    "file-upload"
+                ]
+            },
+            "dueDate": "2024-11-05T23:59",
+            "availableFrom": "2024-10-20T00:00",
+            "availableUntil": "2024-11-06T23:59"
+        }
+    ],
+    "DADA441": [
+        {
+            "id": "DADA441_1",
+            "name": "Dark Artifact Identification",
+            "description": "Identify and write a report on three dark artifacts, explaining their origins and dangers, as discussed in Week 1.",
+            "points": 100,
+            "group": "assignment",
+            "displayGradeAs": "percentage",
+            "submissionType": {
+                "type": "online",
+                "onlineEntryOptions": [
+                    "text-entry",
+                    "file-upload"
+                ]
+            },
+            "dueDate": "2024-10-25T23:59",
+            "availableFrom": "2024-10-10T00:00",
+            "availableUntil": "2024-11-01T23:59"
+        },
+        {
+            "id": "DADA441_2",
+            "name": "The Imperius Curse: Defense Strategies",
+            "description": "Write an analysis of the Imperius Curse and suggest defense strategies for resisting its effects.",
+            "points": 75,
+            "group": "essay",
+            "displayGradeAs": "letter",
+            "submissionType": {
+                "type": "online",
+                "onlineEntryOptions": [
+                    "text-entry"
+                ]
+            },
+            "dueDate": "2024-11-10T23:59",
+            "availableFrom": "2024-10-15T00:00",
+            "availableUntil": "2024-11-12T23:59"
+        }
+    ],
+    "RAV01": [
+        {
+            "id": "RAV01_1",
+            "name": "Ravenclaw Values Reflection",
+            "description": "Reflect on how Ravenclaw values of wisdom and creativity can shape your academic journey. Submit a personal essay.",
+            "points": 50,
+            "group": "essay",
+            "displayGradeAs": "letter",
+            "submissionType": {
+                "type": "online",
+                "onlineEntryOptions": [
+                    "text-entry",
+                    "file-upload"
+                ]
+            },
+            "dueDate": "2024-10-20T23:59",
+            "availableFrom": "2024-10-01T00:00",
+            "availableUntil": "2024-10-22T23:59"
+        }
+    ],
+    "MUG302": [
+        {
+            "id": "MUG302_1",
+            "name": "Muggle Music Analysis",
+            "description": "Analyze a piece of Muggle music from the 20th century and discuss its cultural significance.",
+            "points": 75,
+            "group": "assignment",
+            "displayGradeAs": "percentage",
+            "submissionType": {
+                "type": "online",
+                "onlineEntryOptions": [
+                    "text-entry",
+                    "media-recording"
+                ]
+            },
+            "dueDate": "2024-11-05T23:59",
+            "availableFrom": "2024-10-15T00:00",
+            "availableUntil": "2024-11-06T23:59"
+        }
+    ],
+    "OWL501": [
+        {
+            "id": "OWL501_1",
+            "name": "Career Pathways Report",
+            "description": "Research and submit a report on the various career pathways available after completing your OWLs.",
+            "points": 100,
+            "group": "assignment",
+            "displayGradeAs": "percentage",
+            "submissionType": {
+                "type": "online",
+                "onlineEntryOptions": [
+                    "text-entry",
+                    "file-upload"
+                ]
+            },
+            "dueDate": "2024-10-30T23:59",
+            "availableFrom": "2024-10-01T00:00",
+            "availableUntil": "2024-11-01T23:59"
+        }
+    ],
+    "POT105": [
+        {
+            "id": "POT105_1",
+            "name": "Potion Brewing Basics",
+            "description": "Prepare a basic healing potion using the ingredients provided and submit a report on your brewing process.",
+            "points": 100,
+            "group": "assignment",
+            "displayGradeAs": "percentage",
+            "submissionType": {
+                "type": "online",
+                "onlineEntryOptions": [
+                    "file-upload"
+                ]
+            },
+            "dueDate": "2024-10-28T23:59",
+            "availableFrom": "2024-10-10T00:00",
+            "availableUntil": "2024-10-30T23:59"
+        }
+    ],
+    "POT106": [
+        {
+            "id": "POT106_1",
+            "name": "Lab Safety Quiz",
+            "description": "Complete a quiz on lab safety protocols discussed in Week 1 of Potion I Lab.",
+            "points": 50,
+            "group": "quiz",
+            "displayGradeAs": "percentage",
+            "submissionType": {
+                "type": "online",
+                "onlineEntryOptions": [
+                    "file-upload"
+                ]
+            },
+            "dueDate": "2024-11-02T23:59",
+            "availableFrom": "2024-10-20T00:00",
+            "availableUntil": "2024-11-03T23:59"
+        }
+    ],
+    "DADA320": [
+        {
+            "id": "DADA320_1",
+            "name": "Patronus History Presentation",
+            "description": "Prepare a presentation on the history and significance of the Patronus charm, with a special focus on the Prisoner of Azkaban and dementors.",
+            "points": 100,
+            "group": "presentation",
+            "displayGradeAs": "letter",
+            "submissionType": {
+                "type": "online",
+                "onlineEntryOptions": [
+                    "file-upload",
+                    "media-recording"
+                ]
+            },
+            "dueDate": "2024-11-12T23:59",
+            "availableFrom": "2024-10-15T00:00",
+            "availableUntil": "2024-11-14T23:59"
+        }
+    ]
+}
