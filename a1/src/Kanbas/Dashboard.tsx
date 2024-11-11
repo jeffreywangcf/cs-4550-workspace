@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, {useState} from "react";
+import {Link, useNavigate} from "react-router-dom";
 import * as db from "./Database";
 import NewCourseModal from "./NewCourseModal";
 
@@ -14,15 +14,31 @@ export interface CourseProp {
 }
 
 export default function Dashboard() {
+
+    const navigate = useNavigate();
+
     const [courses, setCourses] = useState<CourseProp[]>(db.courses);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedCourse, setSelectedCourse] = useState<CourseProp | null>(null);
 
-    const openModal = () => setIsModalOpen(true);
+    const openModal = (course: CourseProp | null = null) => {
+        setSelectedCourse(course);
+        setIsModalOpen(true);
+    };
+
     const closeModal = (newCourse: CourseProp | null) => {
         setIsModalOpen(false);
         if (newCourse) {
-            setCourses([...courses, newCourse]);
+            setCourses((c) =>
+                c.some((course) => course.id === newCourse.id)
+                    ? c.map((course) => (course.id === newCourse.id ? newCourse : course))
+                    : [...c, newCourse]
+            );
         }
+    };
+
+    const handleDelete = (id: string) => {
+        setCourses((prevCourses) => prevCourses.filter((course) => course.id !== id));
     };
 
     return (
@@ -30,17 +46,17 @@ export default function Dashboard() {
             <h1 id="wd-dashboard-title" className="text-4xl font-bold mb-4">
                 Dashboard
             </h1>
-            <hr className="mb-6" />
+            <hr className="mb-6"/>
 
             <div className="flex w-full justify-between">
                 <span className="text-xl font-bold">New Course</span>
-                <button onClick={openModal} className="btn btn-primary min-w-24">Add</button>
+                <button onClick={() => openModal(null)} className="btn btn-primary min-w-24">Add</button>
             </div>
 
             <h2 id="wd-dashboard-published" className="text-2xl font-semibold mb-4">
                 Published Courses ({courses.length})
             </h2>
-            <hr className="mb-6" />
+            <hr className="mb-6"/>
 
             <div
                 id="wd-dashboard-courses"
@@ -53,7 +69,7 @@ export default function Dashboard() {
                                 <img
                                     src={course.image}
                                     alt={course.name}
-                                    className="w-full h-44 object-center"
+                                    className="w-full h-44 object-cover"
                                 />
                             </figure>
                             <div className="card-body pt-4 h-36">
@@ -63,22 +79,24 @@ export default function Dashboard() {
                                     {course.courseCode} {course.semester}
                                 </p>
                             </div>
-
-                            <div className='flex justify-between pl-4 pr-4'>
-                                <button className="btn btn-primary">Go</button>
-                                <div className="join join-horizontal">
-                                    <button className="btn btn-secondary join-item" onClick={openModal}>Edit</button>
-                                    <button className="btn btn-accent join-item">Delete</button>
-                                </div>
-                            </div>
                         </Link>
+                        <div className='flex justify-between pl-4 pr-4'>
+                            <button className="btn btn-primary" onClick={() => {navigate(course.link)}}>Go</button>
+                            <div className="join join-horizontal">
+                                <button className="btn btn-secondary join-item" onClick={() => openModal(course)}>Edit
+                                </button>
+                                <button className="btn btn-accent join-item"
+                                        onClick={() => handleDelete(course.id)}>Delete
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 ))}
             </div>
-
             <NewCourseModal
                 isOpen={isModalOpen}
                 onClose={closeModal}
+                initialData={selectedCourse}
             />
         </div>
     );
