@@ -1,70 +1,85 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { courses } from "./Database";
+import * as db from "./Database";
+import NewCourseModal from "./NewCourseModal";
+
+export interface CourseProp {
+    id: string;
+    name: string;
+    courseCode: string;
+    semester: string;
+    image: string;
+    description: string;
+    link: string;
+}
+
 export default function Dashboard() {
-  return (
-    <div id="wd-dashboard" className="p-6">
-      <h1 id="wd-dashboard-title" className="text-4xl font-bold mb-4">
-        Dashboard
-      </h1>
-      <hr className="mb-6" />
+    const [courses, setCourses] = useState<CourseProp[]>(db.courses);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
-      <h2 id="wd-dashboard-published" className="text-2xl font-semibold mb-4">
-        Published Courses (8)
-      </h2>
-      <hr className="mb-6" />
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = (newCourse: CourseProp | null) => {
+        setIsModalOpen(false);
+        if (newCourse) {
+            setCourses([...courses, newCourse]);
+        }
+    };
 
-      <div
-        id="wd-dashboard-courses"
-        className="grid grid-cols-[repeat(auto-fit,minmax(16rem,16rem))] gap-8"
-      >
-        {courses.map(course => (
-          <div className="card w-64 h-80 bg-base-100 shadow-lg" key={course.id}>
-            <Link to={course.link}>
-              <figure className="rounded-t-2xl">
-                <img
-                  src={course.image}
-                  alt={course.name}
-                  className="w-full h-40 object-center"
-                />
-              </figure>
-              <div className="card-body pt-4">
-                <h2 className="card-title">{course.id}</h2>
-                <p>{course.name}</p>
-                <p className="text-sm opacity-70">
-                  {course.courseCode} {course.semester}
-                </p>
-              </div>
-            </Link>
-          </div>
-        ))}
-      </div>
+    return (
+        <div id="wd-dashboard" className="p-6">
+            <h1 id="wd-dashboard-title" className="text-4xl font-bold mb-4">
+                Dashboard
+            </h1>
+            <hr className="mb-6" />
 
-      <div className="alert mt-8 w-full">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          className="h-6 w-6 shrink-0 stroke-current"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          ></path>
-        </svg>
-        <div>
-          <span>Image generated with </span>
-          <a
-            href="https://github.com/lllyasviel/Fooocus"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline font-bold"
-          >
-            Fooocus
-          </a>
+            <div className="flex w-full justify-between">
+                <span className="text-xl font-bold">New Course</span>
+                <button onClick={openModal} className="btn btn-primary min-w-24">Add</button>
+            </div>
+
+            <h2 id="wd-dashboard-published" className="text-2xl font-semibold mb-4">
+                Published Courses ({courses.length})
+            </h2>
+            <hr className="mb-6" />
+
+            <div
+                id="wd-dashboard-courses"
+                className="grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-8"
+            >
+                {courses.map((course) => (
+                    <div className="card min-w-64 h-96 bg-base-100 shadow-lg" key={course.id}>
+                        <Link to={course.link}>
+                            <figure className="rounded-t-2xl">
+                                <img
+                                    src={course.image}
+                                    alt={course.name}
+                                    className="w-full h-44 object-center"
+                                />
+                            </figure>
+                            <div className="card-body pt-4 h-36">
+                                <h2 className="card-title">{course.id}</h2>
+                                <p>{course.name}</p>
+                                <p className="text-sm opacity-70">
+                                    {course.courseCode} {course.semester}
+                                </p>
+                            </div>
+
+                            <div className='flex justify-between pl-4 pr-4'>
+                                <button className="btn btn-primary">Go</button>
+                                <div className="join join-horizontal">
+                                    <button className="btn btn-secondary join-item" onClick={openModal}>Edit</button>
+                                    <button className="btn btn-accent join-item">Delete</button>
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                ))}
+            </div>
+
+            <NewCourseModal
+                isOpen={isModalOpen}
+                onClose={closeModal}
+            />
         </div>
-      </div>
-    </div>
-  );
+    );
 }
