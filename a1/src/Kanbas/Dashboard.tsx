@@ -3,6 +3,10 @@ import {Link, useNavigate} from "react-router-dom";
 import * as db from "./Database";
 import NewCourseModal from "./NewCourseModal";
 
+import {useDispatch, useSelector} from "react-redux";
+import {RootState} from "./store";
+import {addCourse, editCourse, deleteCourse} from "./store/reducer";
+
 export interface CourseProp {
     id: string;
     name: string;
@@ -16,8 +20,8 @@ export interface CourseProp {
 export default function Dashboard() {
 
     const navigate = useNavigate();
-
-    const [courses, setCourses] = useState<CourseProp[]>(db.courses);
+    const dispatch = useDispatch();
+    const courses = useSelector((state: RootState) => state.courses.courses);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedCourse, setSelectedCourse] = useState<CourseProp | null>(null);
 
@@ -29,16 +33,16 @@ export default function Dashboard() {
     const closeModal = (newCourse: CourseProp | null) => {
         setIsModalOpen(false);
         if (newCourse) {
-            setCourses((c) =>
-                c.some((course) => course.id === newCourse.id)
-                    ? c.map((course) => (course.id === newCourse.id ? newCourse : course))
-                    : [...c, newCourse]
-            );
+            if(courses.some(c => c.id === newCourse.id)) {
+                dispatch(editCourse(newCourse));
+            }else{
+                dispatch(addCourse(newCourse));
+            }
         }
     };
 
     const handleDelete = (id: string) => {
-        setCourses((prevCourses) => prevCourses.filter((course) => course.id !== id));
+        dispatch(deleteCourse(id));
     };
 
     return (
