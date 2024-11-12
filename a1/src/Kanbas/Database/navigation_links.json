@@ -1,0 +1,27 @@
+[
+    {
+        "label": "Dashboard",
+        "path": "/Kanbas/Dashboard",
+        "icon": "GiMagicGate"
+    },
+    {
+        "label": "Courses",
+        "path": "/Kanbas/Dashboard",
+        "icon": "FaWandSparkles"
+    },
+    {
+        "label": "Calendar",
+        "path": "/Kanbas/Calendar",
+        "icon": "RiFilePaper2Line"
+    },
+    {
+        "label": "Inbox",
+        "path": "/Kanbas/Inbox",
+        "icon": "GiOwl"
+    },
+    {
+        "label": "Labs",
+        "path": "/Labs",
+        "icon": "AiFillExperiment"
+    }
+]
