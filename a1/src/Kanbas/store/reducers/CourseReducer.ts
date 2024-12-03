@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import * as db from '../Database';
-import { CourseProps } from "../shared/props/CourseProps";
-import { ModuleProps } from "../shared/props/ModuleProps";
+import * as db from '../../Database';
+import { CourseProps } from "../../shared/props/CourseProps";
+import { ModuleProps } from "../../shared/props/ModuleProps";
 
 interface CourseState {
     courses: CourseProps[];

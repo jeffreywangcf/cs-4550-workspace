@@ -4,7 +4,7 @@ import NewCourseModal from "./NewCourseModal";
 
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "./store";
-import {addCourse, editCourse, deleteCourse} from "./store/reducer";
+import {addCourse, editCourse, deleteCourse} from "./store/reducers/CourseReducer";
 import {CourseProps} from "./shared/props/CourseProps";
 
 export default function Dashboard() {

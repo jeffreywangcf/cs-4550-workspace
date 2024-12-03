@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import {ModuleProps} from "../../shared/props/ModuleProps";
-import {addModule, editModule} from "../../store/reducer";
+import {addModule, editModule} from "../../store/reducers/CourseReducer";
 
 interface NewModuleModalProps {
     isOpen: boolean;

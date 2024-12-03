@@ -1,5 +1,5 @@
 import {configureStore} from '@reduxjs/toolkit'
-import coursesReducer from './reducer'
+import coursesReducer from './reducers/CourseReducer'
 
 const store = configureStore({
     reducer: {

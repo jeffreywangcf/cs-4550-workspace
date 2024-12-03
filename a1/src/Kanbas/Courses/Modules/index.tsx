@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../../store";
 import NewModuleModal from "./NewModuleModal";
 import {useState} from "react";
+import {ModuleProps} from "../../shared/props/ModuleProps";
 
 export default function Modules() {
     const { cid } = useParams<{ cid: string }>();
@@ -16,11 +17,8 @@ export default function Modules() {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    if (!course || !course.modules || course.modules.length === 0) {
-        return <div className="alert-error m-4">No modules available.</div>;
-    }
 
-    const modules = course.modules || [];
+    const modules: ModuleProps[] = course ? course.modules : [];
 
     const handleAddModule = () => {
         setIsModalOpen(true);
@@ -46,7 +44,7 @@ export default function Modules() {
                                     <BsGripVertical className="text-2xl mr-2" />
                                     <span>{module.name}</span>
                                 </div>
-                                <ModuleControlButtons courseId={course.id} module={module} />
+                                <ModuleControlButtons courseId={course!.id} module={module} />
                             </div>
                             <div className="p-0">
                                 <ul>
@@ -70,7 +68,7 @@ export default function Modules() {
             <NewModuleModal
                 isOpen={isModalOpen}
                 onClose={closeModal}
-                courseId={course.id}
+                courseId={course!.id}
             />
         </div>
     );

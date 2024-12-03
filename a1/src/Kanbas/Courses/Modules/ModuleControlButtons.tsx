@@ -3,7 +3,7 @@ import GreenCheckmark from "./GreenCheckmark";
 import {FaPlus} from "react-icons/fa";
 import {MdDelete, MdEdit} from "react-icons/md";
 import {useDispatch} from "react-redux";
-import {deleteModule} from "../../store/reducer";
+import {deleteModule} from "../../store/reducers/CourseReducer";
 import {useState} from "react";
 import NewModuleModal from "./NewModuleModal";
 import {ModuleProps} from "../../shared/props/ModuleProps";
