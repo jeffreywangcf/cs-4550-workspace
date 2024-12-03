@@ -1,21 +1,11 @@
 import React, {useState} from "react";
 import {Link, useNavigate} from "react-router-dom";
-import * as db from "./Database";
 import NewCourseModal from "./NewCourseModal";
 
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "./store";
 import {addCourse, editCourse, deleteCourse} from "./store/reducer";
-
-export interface CourseProp {
-    id: string;
-    name: string;
-    courseCode: string;
-    semester: string;
-    image: string;
-    description: string;
-    link: string;
-}
+import {CourseProps} from "./shared/props/CourseProps";
 
 export default function Dashboard() {
 
@@ -23,14 +13,14 @@ export default function Dashboard() {
     const dispatch = useDispatch();
     const courses = useSelector((state: RootState) => state.courses.courses);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [selectedCourse, setSelectedCourse] = useState<CourseProp | null>(null);
+    const [selectedCourse, setSelectedCourse] = useState<CourseProps | null>(null);
 
-    const openModal = (course: CourseProp | null = null) => {
+    const openModal = (course: CourseProps | null = null) => {
         setSelectedCourse(course);
         setIsModalOpen(true);
     };
 
-    const closeModal = (newCourse: CourseProp | null) => {
+    const closeModal = (newCourse: CourseProps | null) => {
         setIsModalOpen(false);
         if (newCourse) {
             if(courses.some(c => c.id === newCourse.id)) {

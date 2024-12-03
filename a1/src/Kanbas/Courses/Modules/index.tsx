@@ -1,53 +1,77 @@
-// @ts-nocheck
-
 import { BsGripVertical } from "react-icons/bs";
 import LessonControlButtons from "./LessonControlButtons";
 import ModuleControlButtons from "./ModuleControlButtons";
 import ModuleControls from "./ModuleControls";
 import "./styles.css";
-import { modules } from "../../Database";
 import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store";
+import NewModuleModal from "./NewModuleModal";
+import {useState} from "react";
+
 export default function Modules() {
-  const { cid } = useParams();
-  const weeksObj = modules.find(course => course[cid]);
-  if (!weeksObj || !weeksObj[cid]) {
-    return <div className="alert-error m-4">No modules available.</div>;
-  }
-  const weeks = weeksObj[cid];
-  return (
-    <div className="p-6">
-      <ModuleControls />
-      <ul id="wd-modules" className="space-y-6">
-        {weeks.map(week => (
-          <li key={week._id} className="wd-module">
-            <div className="collapse border border-gray-300 rounded-lg">
-              <input type="checkbox" className="peer" defaultChecked />
-              <div className="collapse-title bg-base-300 text-info-content font-bold p-4 peer-checked:bg-base-300 flex justify-between items-center">
-                <div className="flex">
-                  <BsGripVertical className="text-2xl mr-2" />
-                  <span>{week.name}</span>
-                </div>
-                <ModuleControlButtons />
-              </div>
-              <div className="collapse-content p-0">
-                <ul>
-                  {week.lessons.map(lesson => (
-                    <li key={lesson._id} className="wd-lesson p-4">
-                      <div className="flex items-center">
-                        <BsGripVertical className="text-2xl mr-2" />
-                        <span className="flex-grow text-left">
-                          {lesson.name}
-                        </span>
-                        <LessonControlButtons />
-                      </div>
+    const { cid } = useParams<{ cid: string }>();
+    const courses = useSelector((state: RootState) => state.courses.courses);
+    const course = courses.find(course => course.id === cid);
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    if (!course || !course.modules || course.modules.length === 0) {
+        return <div className="alert-error m-4">No modules available.</div>;
+    }
+
+    const modules = course.modules || [];
+
+    const handleAddModule = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
+
+
+    return (
+        <div className="p-6">
+            <ModuleControls onAddModule={handleAddModule} />
+            <ul id="wd-modules" className="space-y-6">
+                {modules.map(module => (
+                    <li key={module._id} className="wd-module">
+                        <div className="border border-gray-300 rounded-lg">
+                            <div
+                                className="bg-base-300 text-info-content font-bold p-4 peer-checked:bg-base-300 flex justify-between items-center"
+                            >
+                                <div className="flex">
+                                    <BsGripVertical className="text-2xl mr-2" />
+                                    <span>{module.name}</span>
+                                </div>
+                                <ModuleControlButtons courseId={course.id} module={module} />
+                            </div>
+                            <div className="p-0">
+                                <ul>
+                                    {module.lessons.map(lesson => (
+                                        <li key={lesson._id} className="wd-lesson p-4">
+                                            <div className="flex items-center">
+                                                <BsGripVertical className="text-2xl mr-2" />
+                                                <span className="flex-grow text-left">
+                                                    {lesson.name}
+                                                </span>
+                                                <LessonControlButtons />
+                                            </div>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
                     </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+                ))}
+            </ul>
+            <NewModuleModal
+                isOpen={isModalOpen}
+                onClose={closeModal}
+                courseId={course.id}
+            />
+        </div>
+    );
 }

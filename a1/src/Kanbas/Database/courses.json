@@ -6,7 +6,49 @@
         "semester": "Fall 2024",
         "image": "/images/courses/TRS201-cover.png",
         "description": "An advanced course in the magical art of transfiguration.",
-        "link": "/Kanbas/Courses/TRS201/Home"
+        "link": "/Kanbas/Courses/TRS201/Home",
+        "modules": [
+            {
+                "_id": "TRS201_W1",
+                "name": "Review and Syllabus Overview",
+                "description": "A review of previous transfiguration concepts and an introduction to the course syllabus.",
+                "course": "TRS201",
+                "lessons": [
+                    {
+                        "_id": "TRS201_W1_L1",
+                        "name": "Review of Transfiguration I",
+                        "description": "Recap of key concepts covered in Transfiguration I, including basic object transformations.",
+                        "module": "TRS201_W1"
+                    },
+                    {
+                        "_id": "TRS201_W1_L2",
+                        "name": "Course Syllabus and Expectations",
+                        "description": "An overview of the course syllabus, grading policies, and expectations for Transfiguration II.",
+                        "module": "TRS201_W1"
+                    }
+                ]
+            },
+            {
+                "_id": "TRS201_W2",
+                "name": "Advanced Principles of Transfiguration",
+                "description": "Exploring the theoretical foundations of advanced object transmutation and its practical applications.",
+                "course": "TRS201",
+                "lessons": [
+                    {
+                        "_id": "TRS201_W2_L1",
+                        "name": "Object Transmutation: Theory and Practice",
+                        "description": "Exploring the theoretical foundations of object transmutation and its practical applications.",
+                        "module": "TRS201_W2"
+                    },
+                    {
+                        "_id": "TRS201_W2_L2",
+                        "name": "Living to Non-living Transfiguration",
+                        "description": "Transfiguring living creatures into non-living objects, focusing on the complexities and ethical considerations.",
+                        "module": "TRS201_W2"
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "DADA441",
@@ -15,7 +57,29 @@
         "semester": "Fall 2024",
         "image": "/images/courses/DADA441-cover.png",
         "description": "A comprehensive study of defense mechanisms against the Unforgivable Curses.",
-        "link": "/Kanbas/Courses/DADA441/Home"
+        "link": "/Kanbas/Courses/DADA441/Home",
+        "modules": [
+            {
+                "_id": "DADA441_W1",
+                "name": "Introduction to Dark Matters",
+                "description": "A broad overview of dark magic, its origins, and the role it plays in wizarding conflicts.",
+                "course": "DADA441",
+                "lessons": [
+                    {
+                        "_id": "DADA441_W1_L1",
+                        "name": "History of Dark Magic",
+                        "description": "Exploring the origins and evolution of dark magic throughout wizarding history.",
+                        "module": "DADA441_W1"
+                    },
+                    {
+                        "_id": "DADA441_W1_L2",
+                        "name": "Identifying Dark Artifacts",
+                        "description": "Learning how to recognize dark artifacts and understanding the dangers they pose.",
+                        "module": "DADA441_W1"
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "RAV01",
@@ -24,7 +88,49 @@
         "semester": "Fall 2024",
         "image": "/images/courses/RAV01-cover.png",
         "description": "An introduction to Ravenclaw values and academic excellence.",
-        "link": "/Kanbas/Courses/RAV01/Home"
+        "link": "/Kanbas/Courses/RAV01/Home",
+        "modules": [
+            {
+                "_id": "RAV01_W1",
+                "name": "Understanding Ravenclaw Values",
+                "description": "An exploration of the key values of Ravenclaw house, including wisdom, creativity, and learning.",
+                "course": "RAV01",
+                "lessons": [
+                    {
+                        "_id": "RAV01_W1_L1",
+                        "name": "The Importance of Wisdom",
+                        "description": "Examining how wisdom is central to Ravenclaw house and how it shapes decisions and actions.",
+                        "module": "RAV01_W1"
+                    },
+                    {
+                        "_id": "RAV01_W1_L2",
+                        "name": "Creativity and Individuality",
+                        "description": "Understanding the role of creativity and individuality in fostering a Ravenclaw student's academic journey.",
+                        "module": "RAV01_W1"
+                    }
+                ]
+            },
+            {
+                "_id": "RAV01_W2",
+                "name": "Introduction to Campus Resources",
+                "description": "Familiarizing students with key resources on campus, including academic, health, and social support services.",
+                "course": "RAV01",
+                "lessons": [
+                    {
+                        "_id": "RAV01_W2_L1",
+                        "name": "Academic Support and Libraries",
+                        "description": "A guide to using the campus libraries and accessing academic support resources available to students.",
+                        "module": "RAV01_W2"
+                    },
+                    {
+                        "_id": "RAV01_W2_L2",
+                        "name": "Health and Wellness Services",
+                        "description": "An overview of the health and wellness services available to Ravenclaw students on campus.",
+                        "module": "RAV01_W2"
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "MUG302",
@@ -33,7 +139,8 @@
         "semester": "Fall 2024",
         "image": "/images/courses/MUG302-cover.png",
         "description": "A study of Muggle musical history and culture.",
-        "link": "/Kanbas/Courses/MUG302/Home"
+        "link": "/Kanbas/Courses/MUG302/Home",
+        "modules": []
     },
     {
         "id": "OWL501",
@@ -42,7 +149,29 @@
         "semester": "Fall 2024",
         "image": "/images/courses/OWL500-cover.png",
         "description": "A course dedicated to preparing for the OWL exams.",
-        "link": "/Kanbas/Courses/OWL501/Home"
+        "link": "/Kanbas/Courses/OWL501/Home",
+        "modules": [
+            {
+                "_id": "OWL501_W1",
+                "name": "Importance of OWLs and Career Planning",
+                "description": "An introduction to the OWL exams and their critical role in shaping future careers in the wizarding world.",
+                "course": "OWL501",
+                "lessons": [
+                    {
+                        "_id": "OWL501_W1_L1",
+                        "name": "Why OWLs Matter",
+                        "description": "An overview of the significance of OWL exams in academic progression and job prospects.",
+                        "module": "OWL501_W1"
+                    },
+                    {
+                        "_id": "OWL501_W1_L2",
+                        "name": "Career Pathways After OWLs",
+                        "description": "Exploring various career paths that depend on successful OWL results and how to plan for them.",
+                        "module": "OWL501_W1"
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "POT105",
@@ -51,7 +180,29 @@
         "semester": "Fall 2024",
         "image": "/images/courses/POT105-cover.png",
         "description": "An introductory course on potion brewing and its applications.",
-        "link": "/Kanbas/Courses/POT105/Home"
+        "link": "/Kanbas/Courses/POT105/Home",
+        "modules": [
+            {
+                "_id": "POT105_W1",
+                "name": "Review and Syllabus Overview",
+                "description": "An introduction to Potion I, reviewing the syllabus and course expectations.",
+                "course": "POT105",
+                "lessons": [
+                    {
+                        "_id": "POT105_W1_L1",
+                        "name": "Overview of Potion Brewing Basics",
+                        "description": "A review of basic potion brewing principles that will be explored throughout the course.",
+                        "module": "POT105_W1"
+                    },
+                    {
+                        "_id": "POT105_W1_L2",
+                        "name": "Course Syllabus and Expectations",
+                        "description": "Detailed review of the Potion I syllabus, including grading policies and expectations for potion practice.",
+                        "module": "POT105_W1"
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "POT106",
@@ -60,7 +211,35 @@
         "semester": "Fall 2024",
         "image": "/images/courses/POT105-cover.png",
         "description": "A practical lab course to accompany Potion I.",
-        "link": "/Kanbas/Courses/POT106/Home"
+        "link": "/Kanbas/Courses/POT106/Home",
+        "modules": [
+            {
+                "_id": "POT106_W1",
+                "name": "Introduction to the Potion Lab",
+                "description": "A comprehensive introduction to the Potion I lab, focusing on lab safety, equipment handling, and experiment procedures.",
+                "course": "POT106",
+                "lessons": [
+                    {
+                        "_id": "POT106_W1_L1",
+                        "name": "Lab Introduction",
+                        "description": "An overview of the lab environment, including the layout and the purpose of key equipment.",
+                        "module": "POT106_W1"
+                    },
+                    {
+                        "_id": "POT106_W1_L2",
+                        "name": "Safety and Handling Equipment",
+                        "description": "A guide to safely handling lab equipment and understanding safety protocols in potion brewing.",
+                        "module": "POT106_W1"
+                    },
+                    {
+                        "_id": "POT106_W1_L3",
+                        "name": "Experiment Procedures",
+                        "description": "An introduction to potion experiment procedures, including proper documentation and steps to follow during lab work.",
+                        "module": "POT106_W1"
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "DADA320",
@@ -69,6 +248,42 @@
         "semester": "Fall 2024",
         "image": "/images/courses/DADA320-cover.png",
         "description": "A study of the theory and practical application of the Patronus charm.",
-        "link": "/Kanbas/Courses/DADA320/Home"
+        "link": "/Kanbas/Courses/DADA320/Home",
+        "modules": [
+            {
+                "_id": "DADA320_W1",
+                "name": "Course Overview and Syllabus",
+                "description": "An introduction to the Patronus Theory and Application course, focusing on the syllabus and course expectations.",
+                "course": "DADA320",
+                "lessons": [
+                    {
+                        "_id": "DADA320_W1_L1",
+                        "name": "Course Syllabus and Expectations",
+                        "description": "A detailed overview of the syllabus, grading policies, and expectations for the Patronus Theory and Application course.",
+                        "module": "DADA320_W1"
+                    }
+                ]
+            },
+            {
+                "_id": "DADA320_W2",
+                "name": "History of the Patronus Charm",
+                "description": "An exploration of the history and significance of the Patronus charm in defending against dark creatures.",
+                "course": "DADA320",
+                "lessons": [
+                    {
+                        "_id": "DADA320_W2_L1",
+                        "name": "The History of the Patronus Charm",
+                        "description": "A look into the origin and development of the Patronus charm throughout wizarding history.",
+                        "module": "DADA320_W2"
+                    },
+                    {
+                        "_id": "DADA320_W2_L2",
+                        "name": "The History of the Prisoner of Azkaban and Dementors",
+                        "description": "An exploration of the history of the Prisoner of Azkaban and the role dementors played in guarding the prison, as well as their relation to the Patronus charm.",
+                        "module": "DADA320_W2"
+                    }
+                ]
+            }
+        ]
     }
 ]

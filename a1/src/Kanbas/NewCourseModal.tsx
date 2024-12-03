@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import type { CourseProp } from './Dashboard';
+import {CourseProps} from "./shared/props/CourseProps";
 
 interface NewCourseModalProps {
     isOpen: boolean;
-    onClose: (course: CourseProp | null) => void;
-    initialData?: CourseProp | null;
+    onClose: (course: CourseProps | null) => void;
+    initialData?: CourseProps | null;
 }
 
 const NewCourseModal = ({ isOpen, onClose, initialData }: NewCourseModalProps) => {
@@ -25,14 +25,15 @@ const NewCourseModal = ({ isOpen, onClose, initialData }: NewCourseModalProps) =
     }, [initialData]);
 
     const handleSave = () => {
-        const newCourse: CourseProp = {
+        const newCourse: CourseProps = {
             id: nc_id,
             name: nc_name,
             courseCode: nc_courseCode,
             semester: nc_semester,
             image: nc_image,
             description: nc_description,
-            link: `/Kanbas/Courses/${nc_id}/Home`
+            link: `/Kanbas/Courses/${nc_id}/Home`,
+            modules: []
         };
         onClose(newCourse);
     };
